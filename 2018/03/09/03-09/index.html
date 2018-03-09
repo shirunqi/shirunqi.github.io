@@ -94,17 +94,17 @@
 
 
 
-<meta name="description" content="C++中rand() 函数的用法1、rand()不需要参数，它会返回一个从0到最大随机数的任意整数，最大随机数的大小通常是固定的一个大整数。 2、如果你要产生0~99这100个整数中的一个随机整数，可以表达为：int num = rand() % 100;  这样，num的值就是一个0~99中的一个随机数了。 3、如果要产生1~100，则是这样：int num = rand() % 100 + 1">
+<meta name="description" content="C++学习记录：rand()函数rand()函数的用法如下：1.不同于MATLAB，C++中的rand()不需要输入任何参数，使用它生成的随机数的范围为0~最大随机数。其中，最大随机数指的是一个固定的大整数。（注意，这里生成的随机数是一个整数）; 2.如果要产生一个a~b之间的随机整数，可采用如下公式： rand() % (b-a+1)+ a  例如，现在想要产生一个0~99之间的整数，表达式为：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="03-09">
 <meta property="og:url" content="http://yoursite.com/2018/03/09/03-09/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="C++中rand() 函数的用法1、rand()不需要参数，它会返回一个从0到最大随机数的任意整数，最大随机数的大小通常是固定的一个大整数。 2、如果你要产生0~99这100个整数中的一个随机整数，可以表达为：int num = rand() % 100;  这样，num的值就是一个0~99中的一个随机数了。 3、如果要产生1~100，则是这样：int num = rand() % 100 + 1">
+<meta property="og:description" content="C++学习记录：rand()函数rand()函数的用法如下：1.不同于MATLAB，C++中的rand()不需要输入任何参数，使用它生成的随机数的范围为0~最大随机数。其中，最大随机数指的是一个固定的大整数。（注意，这里生成的随机数是一个整数）; 2.如果要产生一个a~b之间的随机整数，可采用如下公式： rand() % (b-a+1)+ a  例如，现在想要产生一个0~99之间的整数，表达式为：">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2018-03-09T03:25:46.000Z">
+<meta property="og:updated_time" content="2018-03-09T09:06:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="03-09">
-<meta name="twitter:description" content="C++中rand() 函数的用法1、rand()不需要参数，它会返回一个从0到最大随机数的任意整数，最大随机数的大小通常是固定的一个大整数。 2、如果你要产生0~99这100个整数中的一个随机整数，可以表达为：int num = rand() % 100;  这样，num的值就是一个0~99中的一个随机数了。 3、如果要产生1~100，则是这样：int num = rand() % 100 + 1">
+<meta name="twitter:description" content="C++学习记录：rand()函数rand()函数的用法如下：1.不同于MATLAB，C++中的rand()不需要输入任何参数，使用它生成的随机数的范围为0~最大随机数。其中，最大随机数指的是一个固定的大整数。（注意，这里生成的随机数是一个整数）; 2.如果要产生一个a~b之间的随机整数，可采用如下公式： rand() % (b-a+1)+ a  例如，现在想要产生一个0~99之间的整数，表达式为：">
 
 
 
@@ -329,18 +329,17 @@
       
 
       
-        <h1 id="C-中rand-函数的用法"><a href="#C-中rand-函数的用法" class="headerlink" title="C++中rand() 函数的用法"></a>C++中rand() 函数的用法</h1><p>1、rand()不需要参数，它会返回一个从0到最大随机数的任意整数，最大随机数的大小通常是固定的一个大整数。</p>
-<p>2、如果你要产生0~99这100个整数中的一个随机整数，可以表达为：int num = rand() % 100; </p>
-<pre><code>这样，num的值就是一个0~99中的一个随机数了。
-</code></pre><p>3、如果要产生1~100，则是这样：int num = rand() % 100 + 1;  </p>
-<p>4、总结来说，可以表示为：int num = rand() % n +a;</p>
-<pre><code>其中的a是起始值，n-1+a是终止值，n是整数的范围。
-</code></pre><p>5、一般性：rand() % (b-a+1)+ a ;    就表示  a~b 之间的一个随机整数。</p>
-<p>6、若要产生0~1之间的小数，则可以先取得0~10的整数，然后均除以10即可得到“随机到十分位”的10个随机小数。</p>
-<pre><code>若要得到“随机到百分位”的随机小数，则需要先得到0~100的10个整数，然后均除以100，其它情况依 此类推。
-</code></pre><p>7、通常rand()产生的随机数在每次运行的时候都是与上一次相同的，这样是为了便于程序的调试。</p>
-<pre><code>若要产生每次不同的随机数，则可以使用srand( seed )函数进行产生随机化种子，随着seed的不同，就能够产生        不同的随机数。
-</code></pre><p>8、还可以包含time.h头文件，然后使用srand(time(0))来使用当前时间使随机数发生器随机化，这样就可以保证每两        次运行时可以得到不同的随机数序列，同时这要求程序的两次运行的间隔超过1秒。</p>
+        <h1 id="C-学习记录：rand-函数"><a href="#C-学习记录：rand-函数" class="headerlink" title="C++学习记录：rand()函数"></a>C++学习记录：rand()函数</h1><h2 id="rand-函数的用法如下："><a href="#rand-函数的用法如下：" class="headerlink" title="rand()函数的用法如下："></a>rand()函数的用法如下：</h2><p>1.不同于MATLAB，C++中的rand()不需要输入任何参数，使用它生成的随机数的范围为0~最大随机数。其中，最大随机数指的是一个固定的大整数。（注意，这里生成的随机数是一个<strong><em>整数</em></strong>）;</p>
+<p>2.如果要产生一个a~b之间的随机整数，可采用如下公式：</p>
+<pre><code>rand() % (b-a+1)+ a
+</code></pre><p> 例如，现在想要产生一个0~99之间的整数，表达式为：</p>
+<pre><code>int num = rand() % 100; 
+</code></pre><p>3.那如果我们想得到一个小数该怎么办呢？</p>
+<p>若要产生0~1之间“随机到十分位”（比如0.1，0.2等等）的小数，则可以先产生0~10的整数，然后除以10即可；</p>
+<p>若要产生0~1之间“随机到百分位”（比如0.01，0.66等等）的小数，则可以先产生0~100的整数，然后除以100即可。</p>
+<p>其它情况依此类推。</p>
+<p>4.会发现每次程序运行的时候rand()产生的随机数与上一次是相同的，这样做是为了便于程序的调试。</p>
+<p>如果想要要每次产生不同的随机数，则可以使用srand(seed)函数产生随机化种子，seed不同，产生的随机数就不同，一般可以用time(0)作seed，即srand(time(0))，这样就可以使每次程序运行时生成不同的随机数。（注意，time(0)指的是获取当前时间)，使用时需包含time.h头文件。</p>
 
       
     </div>
@@ -491,7 +490,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C-中rand-函数的用法"><span class="nav-number">1.</span> <span class="nav-text">C++中rand() 函数的用法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C-学习记录：rand-函数"><span class="nav-number">1.</span> <span class="nav-text">C++学习记录：rand()函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#rand-函数的用法如下："><span class="nav-number">1.1.</span> <span class="nav-text">rand()函数的用法如下：</span></a></li></ol></li></ol></div>
             
 
           </div>

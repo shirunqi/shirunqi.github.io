@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-03-11T12:59:04.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>03-11.md</title>
+    <link href="http://yoursite.com/2018/03/11/03-11/"/>
+    <id>http://yoursite.com/2018/03/11/03-11/</id>
+    <published>2018-03-11T12:32:36.000Z</published>
+    <updated>2018-03-11T12:59:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="新建Macdown的-md文件自带名称、时间的方法"><a href="#新建Macdown的-md文件自带名称、时间的方法" class="headerlink" title="新建Macdown的.md文件自带名称、时间的方法"></a>新建Macdown的.md文件自带名称、时间的方法</h1><p>定位到目标文件夹下，使用如下命令：</p><pre><code>hexo new xxx(指文件名)</code></pre><p>P.S.写这个博客时，发现了两个快速移动光标位置的快捷键：</p><pre><code>command + ↑ ↓ ← →(指方向键的上、下、左、右键)Alt + ← →(指方向键的左、右键)**请自行体会不同之处**</code></pre><h2 id="最后不知天在水，满船清梦压星河"><a href="#最后不知天在水，满船清梦压星河" class="headerlink" title="最后不知天在水，满船清梦压星河"></a>最后不知天在水，满船清梦压星河</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;新建Macdown的-md文件自带名称、时间的方法&quot;&gt;&lt;a href=&quot;#新建Macdown的-md文件自带名称、时间的方法&quot; class=&quot;headerlink&quot; title=&quot;新建Macdown的.md文件自带名称、时间的方法&quot;&gt;&lt;/a&gt;新建Macdown的.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>03-09</title>
+    <link href="http://yoursite.com/2018/03/09/03-09/"/>
+    <id>http://yoursite.com/2018/03/09/03-09/</id>
+    <published>2018-03-09T03:23:20.000Z</published>
+    <updated>2018-03-09T09:06:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="C-学习记录：rand-函数"><a href="#C-学习记录：rand-函数" class="headerlink" title="C++学习记录：rand()函数"></a>C++学习记录：rand()函数</h1><h2 id="rand-函数的用法如下："><a href="#rand-函数的用法如下：" class="headerlink" title="rand()函数的用法如下："></a>rand()函数的用法如下：</h2><p>1.不同于MATLAB，C++中的rand()不需要输入任何参数，使用它生成的随机数的范围为0~最大随机数。其中，最大随机数指的是一个固定的大整数。（注意，这里生成的随机数是一个<strong><em>整数</em></strong>）;</p><p>2.如果要产生一个a~b之间的随机整数，可采用如下公式：</p><pre><code>rand() % (b-a+1)+ a</code></pre><p> 例如，现在想要产生一个0~99之间的整数，表达式为：</p><pre><code>int num = rand() % 100; </code></pre><p>3.那如果我们想得到一个小数该怎么办呢？</p><p>若要产生0~1之间“随机到十分位”（比如0.1，0.2等等）的小数，则可以先产生0~10的整数，然后除以10即可；</p><p>若要产生0~1之间“随机到百分位”（比如0.01，0.66等等）的小数，则可以先产生0~100的整数，然后除以100即可。</p><p>其它情况依此类推。</p><p>4.会发现每次程序运行的时候rand()产生的随机数与上一次是相同的，这样做是为了便于程序的调试。</p><p>如果想要要每次产生不同的随机数，则可以使用srand(seed)函数产生随机化种子，seed不同，产生的随机数就不同，一般可以用time(0)作seed，即srand(time(0))，这样就可以使每次程序运行时生成不同的随机数。（注意，time(0)指的是获取当前时间)，使用时需包含time.h头文件。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;C-学习记录：rand-函数&quot;&gt;&lt;a href=&quot;#C-学习记录：rand-函数&quot; class=&quot;headerlink&quot; title=&quot;C++学习记录：rand()函数&quot;&gt;&lt;/a&gt;C++学习记录：rand()函数&lt;/h1&gt;&lt;h2 id=&quot;rand-函数的用法如下：
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>03-01</title>
+    <link href="http://yoursite.com/2018/03/01/03-01/"/>
+    <id>http://yoursite.com/2018/03/01/03-01/</id>
+    <published>2018-03-01T02:05:13.000Z</published>
+    <updated>2018-03-01T02:46:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="哈尔滨大雪❄️"><a href="#哈尔滨大雪❄️" class="headerlink" title="哈尔滨大雪❄️"></a>哈尔滨大雪❄️</h1><h2 id="撒盐空中差可拟，未若柳絮因风起。"><a href="#撒盐空中差可拟，未若柳絮因风起。" class="headerlink" title="撒盐空中差可拟，未若柳絮因风起。"></a>撒盐空中差可拟，未若柳絮因风起。</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;哈尔滨大雪❄️&quot;&gt;&lt;a href=&quot;#哈尔滨大雪❄️&quot; class=&quot;headerlink&quot; title=&quot;哈尔滨大雪❄️&quot;&gt;&lt;/a&gt;哈尔滨大雪❄️&lt;/h1&gt;&lt;h2 id=&quot;撒盐空中差可拟，未若柳絮因风起。&quot;&gt;&lt;a href=&quot;#撒盐空中差可拟，未若柳絮因风起。&quot;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>02-25</title>
+    <link href="http://yoursite.com/2018/02/25/02-25/"/>
+    <id>http://yoursite.com/2018/02/25/02-25/</id>
+    <published>2018-02-25T14:06:13.000Z</published>
+    <updated>2018-02-25T16:19:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>2018年02月25日学习记录</p><p>-a 代表应用</p><p>ex:open -a MacDown source/_posts/02-25.md</p><p>~：根目录（当前用户）</p><p>/：真正的根目录</p><p>pwd:读取当前路径</p><p>../:代表父目录     ./：代表当前目录</p><p>clear：清屏</p><p>mkdir:新建文件夹</p><p>touch：新建文件</p><p>hexo d -g:生成后部署文件到GitHub(该命令需在其子文件夹下输入)</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;2018年02月25日学习记录&lt;/p&gt;
+&lt;p&gt;-a 代表应用&lt;/p&gt;
+&lt;p&gt;ex:open -a MacDown source/_posts/02-25.md&lt;/p&gt;
+&lt;p&gt;~：根目录（当前用户）&lt;/p&gt;
+&lt;p&gt;/：真正的根目录&lt;/p&gt;
+&lt;p&gt;pwd:读取当前路径&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>First Post</title>
+    <link href="http://yoursite.com/2018/02/21/First-Post/"/>
+    <id>http://yoursite.com/2018/02/21/First-Post/</id>
+    <published>2018-02-21T09:52:19.000Z</published>
+    <updated>2018-02-21T10:08:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>SRQ</strong></p><p>👌<br>国财666</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;SRQ&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;👌&lt;br&gt;国财666&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/02/21/hello-world/"/>
+    <id>http://yoursite.com/2018/02/21/hello-world/</id>
+    <published>2018-02-21T09:21:47.000Z</published>
+    <updated>2018-02-21T09:21:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

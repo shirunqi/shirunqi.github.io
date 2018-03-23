@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.shirunqi.com/2018/02/25/02-25/</loc>
+    <loc>http://www.shirunqi.com/tags/index.html</loc>
     
-    <lastmod>2018-03-23T15:59:51.000Z</lastmod>
+    <lastmod>2018-03-23T16:58:28.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.shirunqi.com/about/index.html</loc>
+    
+    <lastmod>2018-03-23T16:39:34.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.shirunqi.com/2018/03/11/03-11/</loc>
+    
+    <lastmod>2018-03-23T16:26:12.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.shirunqi.com/2018/03/23/Xcode%E7%BC%96%E5%86%99C-%E6%97%A0%E6%B3%95%E6%AD%A3%E7%A1%AE%E8%AF%BB%E5%8F%96txt%E6%96%87%E4%BB%B6%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</loc>
     
-    <lastmod>2018-03-23T15:59:50.000Z</lastmod>
+    <lastmod>2018-03-23T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.shirunqi.com/2018/02/25/02-25/</loc>
+    
+    <lastmod>2018-03-23T16:21:07.000Z</lastmod>
     
   </url>
   
@@ -26,13 +47,6 @@
     <loc>http://www.shirunqi.com/2018/03/09/03-09/</loc>
     
     <lastmod>2018-03-23T14:53:38.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.shirunqi.com/2018/03/11/03-11/</loc>
-    
-    <lastmod>2018-03-23T14:51:30.000Z</lastmod>
     
   </url>
   

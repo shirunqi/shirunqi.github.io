@@ -1,4 +1,6 @@
+http://www.shirunqi.com/2018/03/23/Xcode编写C-无法正确读取txt文件数据的解决办法/
 http://www.shirunqi.com/2018/03/11/03-11/
 http://www.shirunqi.com/2018/03/09/03-09/
 http://www.shirunqi.com/2018/03/01/03-01/
+http://www.shirunqi.com/2018/02/25/02-25/
 http://www.shirunqi.com/2018/02/21/First-Post/

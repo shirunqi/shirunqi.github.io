@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.shirunqi.com/"/>
-  <updated>2018-03-23T16:21:49.000Z</updated>
+  <updated>2018-05-22T11:51:18.000Z</updated>
   <id>http://www.shirunqi.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>K-均值聚类.md</title>
+    <link href="http://www.shirunqi.com/2018/05/22/K-%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/"/>
+    <id>http://www.shirunqi.com/2018/05/22/K-均值聚类/</id>
+    <published>2018-05-22T09:01:13.000Z</published>
+    <updated>2018-05-22T11:51:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="K-均值聚类（K-means）"><a href="#K-均值聚类（K-means）" class="headerlink" title="K-均值聚类（K-means）"></a>K-均值聚类（K-means）</h1><p><strong>K</strong> 指可以分为K个簇；<strong>means</strong> 指簇中心采用所含值的均值来计算。</p><h2 id="算法伪代码："><a href="#算法伪代码：" class="headerlink" title="算法伪代码："></a>算法伪代码：</h2><pre><code>创建K个点作为起始质心（随机选择）：   当任意一个点的簇分配结果发生改变时：      对数据集中的每个数据点：          对每个质心：             计算质心与数据点之间的距离                将数据点分配到距其最近的簇      对每一个簇：         求出均值并将其更新为质心</code></pre><h2 id="程序实现"><a href="#程序实现" class="headerlink" title="程序实现"></a>程序实现</h2><ul><li><p>K—means C++版 </p><p>下载地址：<a href="https://github.com/shirunqi/code_pratice" target="_blank" rel="noopener">https://github.com/shirunqi/code_pratice</a></p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;K-均值聚类（K-means）&quot;&gt;&lt;a href=&quot;#K-均值聚类（K-means）&quot; class=&quot;headerlink&quot; title=&quot;K-均值聚类（K-means）&quot;&gt;&lt;/a&gt;K-均值聚类（K-means）&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;K&lt;/strong&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Xcode编写C++无法正确读取txt文件数据的解决办法</title>

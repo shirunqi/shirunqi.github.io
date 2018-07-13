@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.shirunqi.com/"/>
-  <updated>2018-07-11T09:18:01.000Z</updated>
+  <updated>2018-07-13T13:53:30.000Z</updated>
   <id>http://www.shirunqi.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pwm分别控制电机和舵机.md</title>
+    <link href="http://www.shirunqi.com/2018/07/13/pwm%E5%88%86%E5%88%AB%E6%8E%A7%E5%88%B6%E7%94%B5%E6%9C%BA%E5%92%8C%E8%88%B5%E6%9C%BA/"/>
+    <id>http://www.shirunqi.com/2018/07/13/pwm分别控制电机和舵机/</id>
+    <published>2018-07-13T11:30:43.000Z</published>
+    <updated>2018-07-13T13:53:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="使用PWM实现对电机和舵机的控制"><a href="#使用PWM实现对电机和舵机的控制" class="headerlink" title="使用PWM实现对电机和舵机的控制"></a>使用PWM实现对电机和舵机的控制</h1><p><strong>脉冲宽度调制（PWM）</strong>，即“Pulse Width Modulation”，简称脉宽调制。它是利用微处理器的数字输出对模拟电路进行控制的一种非常有效的技术。简单来说，就是对脉冲宽度的控制。</p><ul><li><p>使用STM32产生PWM信号。STM32F103共有8个定时器，分为高级、通用和基本定时器三类，其中：</p><pre><code>高级定时器：TIM1、TIM8;通用定时器：TIM2~TIM5;基本定时器：TIM6、TIM7.</code></pre></li><li><p>STM32的定时器除了基本定时器，其他的定时器都可以用来产生PWM输出。</p></li><li><p>通用定时器的时钟来自于APB1，高级定时器的时钟来自于APB2.</p></li><li><p>重要参数：</p><pre><code>arr：计数器自动重装值psc：时钟预分频数</code></pre></li></ul><p>这是PWM控制的相关程序里最重要两个参数，这两个值决定了PWM信号的周期。控制电机和舵机，实质上是调节PWM信号的占空比，占空比按我的理解就是高电平在一个周期之内所占的比率，即正脉冲的持续时间与脉冲总周期的比值。这也是脉冲宽度调制的精髓所在。arr与占空比有关。</p><h2 id="PWM控制电机"><a href="#PWM控制电机" class="headerlink" title="PWM控制电机"></a>PWM控制电机</h2><ul><li><p>控制航模电机，PWM频率设置为50Hz，即周期为20ms，那么理论上1ms对应油门0，2ms对应油门100%，也就是占空比为5%~10%。但是在实际测试时，发现油门0要比1ms稍大一些，需在实际测试时才能准确获知。</p></li><li><p>PWM信号实际上是通过从搭载微处理器的开发板上相应的引脚输出的，引脚与电调相连，由电调控制电机。</p></li></ul><h2 id="PWM控制舵机"><a href="#PWM控制舵机" class="headerlink" title="PWM控制舵机"></a>PWM控制舵机</h2><ul><li><p>控制舵机，PWM信号的周期固定为20ms（50Hz），理论上脉宽分布应在1ms~2ms之间，但是事实上脉宽在0.5ms~2.5ms之前，也就是占空比为2.5%~12.5%，脉宽和舵机的转角0度到180度对应，呈线性变化。</p></li><li><p>舵机一般有三根线，棕色为地，红色为电源正，橙色为信号线。舵机直接连接开发板的相应针脚。</p></li></ul><hr><p>期待喜欢四旋翼的朋友与我交流相关知识！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;使用PWM实现对电机和舵机的控制&quot;&gt;&lt;a href=&quot;#使用PWM实现对电机和舵机的控制&quot; class=&quot;headerlink&quot; title=&quot;使用PWM实现对电机和舵机的控制&quot;&gt;&lt;/a&gt;使用PWM实现对电机和舵机的控制&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;脉冲宽度调制
+      
+    
+    </summary>
+    
+    
+      <category term="PWM" scheme="http://www.shirunqi.com/tags/PWM/"/>
+    
+  </entry>
   
   <entry>
     <title>用vector表示二维数组</title>

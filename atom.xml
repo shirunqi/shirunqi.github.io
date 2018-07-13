@@ -105,11 +105,11 @@
   </entry>
   
   <entry>
-    <title>03-11</title>
+    <title>新建Macdown的.md文件自带名称、时间的方法</title>
     <link href="http://www.shirunqi.com/2018/03/11/03-11/"/>
     <id>http://www.shirunqi.com/2018/03/11/03-11/</id>
     <published>2018-03-11T12:32:36.000Z</published>
-    <updated>2018-07-01T12:37:51.000Z</updated>
+    <updated>2018-07-13T14:08:29.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="新建Macdown的-md文件自带名称、时间的方法"><a href="#新建Macdown的-md文件自带名称、时间的方法" class="headerlink" title="新建Macdown的.md文件自带名称、时间的方法"></a>新建Macdown的.md文件自带名称、时间的方法</h1><p>定位到目标文件夹下，使用如下命令：</p><pre><code>hexo new xxx(指文件名)</code></pre><p>P.S.写这个博客时，发现了两个快速移动光标位置的快捷键：</p><pre><code>command + ↑ ↓ ← →(指方向键的上、下、左、右键)Alt + ← →(指方向键的左、右键)**请自行体会不同之处**</code></pre><h2 id="醉后不知天在水，满船清梦压星河"><a href="#醉后不知天在水，满船清梦压星河" class="headerlink" title="醉后不知天在水，满船清梦压星河"></a>醉后不知天在水，满船清梦压星河</h2>]]></content>
     
@@ -128,11 +128,11 @@
   </entry>
   
   <entry>
-    <title>03-09</title>
+    <title>rand()函数</title>
     <link href="http://www.shirunqi.com/2018/03/09/03-09/"/>
     <id>http://www.shirunqi.com/2018/03/09/03-09/</id>
     <published>2018-03-09T03:23:20.000Z</published>
-    <updated>2018-03-23T14:53:38.000Z</updated>
+    <updated>2018-07-13T14:08:12.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="C-学习记录：rand-函数"><a href="#C-学习记录：rand-函数" class="headerlink" title="C++学习记录：rand()函数"></a>C++学习记录：rand()函数</h1><h2 id="rand-函数的用法如下："><a href="#rand-函数的用法如下：" class="headerlink" title="rand()函数的用法如下："></a>rand()函数的用法如下：</h2><ol><li><p>不同于MATLAB，C++中的rand()不需要输入任何参数，使用它生成的随机数的范围为0~最大随机数。其中，最大随机数指的是一个固定的大整数。（注意，这里生成的随机数是一个<strong>整数</strong>）;</p></li><li><p>如果要产生一个a~b之间的随机整数，可采用如下公式：</p><pre><code>rand() % (b-a+1)+ a</code></pre><p>例如，现在想要产生一个0~99之间的整数，表达式为：</p><pre><code>int num = rand() % 100; </code></pre></li><li><p>那如果我们想得到一个小数该怎么办呢？</p></li></ol><p>若要产生0~1之间“随机到十分位”（比如0.1，0.2等等）的小数，则可以先产生0~10的整数，然后除以10即可；</p><p>若要产生0~1之间“随机到百分位”（比如0.01，0.66等等）的小数，则可以先产生0~100的整数，然后除以100即可。</p><p>其它情况依此类推。</p><ol><li>会发现每次程序运行的时候rand()产生的随机数与上一次是相同的，这样做是为了便于程序的调试。</li></ol><p>如果想要要每次产生不同的随机数，则可以使用srand(seed)函数产生随机化种子，seed不同，产生的随机数就不同，一般可以用time(0)作seed，即srand(time(0))，这样就可以使每次程序运行时生成不同的随机数。（注意，time(0)指的是获取当前时间)，使用时需包含time.h头文件。</p>]]></content>
     
@@ -149,11 +149,11 @@
   </entry>
   
   <entry>
-    <title>03-01</title>
+    <title>哈尔滨大雪</title>
     <link href="http://www.shirunqi.com/2018/03/01/03-01/"/>
     <id>http://www.shirunqi.com/2018/03/01/03-01/</id>
     <published>2018-03-01T02:05:13.000Z</published>
-    <updated>2018-03-23T14:54:22.000Z</updated>
+    <updated>2018-07-13T14:07:48.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="哈尔滨大雪❄️"><a href="#哈尔滨大雪❄️" class="headerlink" title="哈尔滨大雪❄️"></a>哈尔滨大雪❄️</h1><h2 id="撒盐空中差可拟，未若柳絮因风起。"><a href="#撒盐空中差可拟，未若柳絮因风起。" class="headerlink" title="撒盐空中差可拟，未若柳絮因风起。"></a>撒盐空中差可拟，未若柳絮因风起。</h2>]]></content>
     
@@ -172,11 +172,11 @@
   </entry>
   
   <entry>
-    <title>02-25</title>
+    <title>hexo博客搭建常用命令记录</title>
     <link href="http://www.shirunqi.com/2018/02/25/02-25/"/>
     <id>http://www.shirunqi.com/2018/02/25/02-25/</id>
     <published>2018-02-25T14:06:13.000Z</published>
-    <updated>2018-03-23T16:21:07.000Z</updated>
+    <updated>2018-07-13T14:07:30.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="hexo博客搭建常用命令记录"><a href="#hexo博客搭建常用命令记录" class="headerlink" title="hexo博客搭建常用命令记录"></a>hexo博客搭建常用命令记录</h2><ol><li><code>-a</code> 代表应用</li></ol><p>例：<code>open -a MacDown source/_posts/02-25.md</code></p><p>表示在目标文件夹下使用<strong>Macdown</strong>新建一个<strong>.md</strong>文件</p><ol><li><code>touch 02-25.md</code></li></ol><p>表示在当前文件夹下新建一个.md文件</p><ol><li><code>hexo d -g / hexo g -d</code></li></ol><p>表示生成并发布到github</p><h2 id="其他常用命令"><a href="#其他常用命令" class="headerlink" title="其他常用命令"></a>其他常用命令</h2><ul><li><code>~</code>：根目录（当前用户）</li><li><code>/</code>：真正的根目录</li><li><code>pwd</code>:读取当前路径</li><li><code>../</code>:代表父目录     </li><li><code>./</code>：代表当前目录</li><li><code>clear</code>：清屏</li><li><code>mkdir</code>:新建文件夹</li></ul>]]></content>
     

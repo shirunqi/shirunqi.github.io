@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.shirunqi.com/"/>
-  <updated>2019-03-19T13:44:31.392Z</updated>
+  <updated>2019-03-19T14:16:51.889Z</updated>
   <id>http://www.shirunqi.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MATLAB将向量强行转为行向量或者列向量</title>
+    <link href="http://www.shirunqi.com/2019/03/19/MATLAB%E5%B0%86%E5%90%91%E9%87%8F%E5%BC%BA%E8%A1%8C%E8%BD%AC%E4%B8%BA%E8%A1%8C%E5%90%91%E9%87%8F%E6%88%96%E8%80%85%E5%88%97%E5%90%91%E9%87%8F/"/>
+    <id>http://www.shirunqi.com/2019/03/19/MATLAB将向量强行转为行向量或者列向量/</id>
+    <published>2019-03-19T14:06:21.000Z</published>
+    <updated>2019-03-19T14:16:51.889Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="MATLAB将向量强行转为行向量或者列向量"><a href="#MATLAB将向量强行转为行向量或者列向量" class="headerlink" title="MATLAB将向量强行转为行向量或者列向量"></a>MATLAB将向量强行转为行向量或者列向量</h1><p>有时我们计算出的向量不知道是行向量还是列向量，但是下一步应用该向量计算时往往需求是固定的(比如就要求是行向量),这时我们需要对计算结果进行一个<strong>“强制转换”</strong>，方法如下：</p><pre><code>a = a(:);  % 强制转为列向量b = b(:)&apos;; % 强制转为行向量</code></pre><h2 id="人生到处知何似-应似飞鸿踏雪泥。"><a href="#人生到处知何似-应似飞鸿踏雪泥。" class="headerlink" title="人生到处知何似?应似飞鸿踏雪泥。"></a>人生到处知何似?应似飞鸿踏雪泥。</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;MATLAB将向量强行转为行向量或者列向量&quot;&gt;&lt;a href=&quot;#MATLAB将向量强行转为行向量或者列向量&quot; class=&quot;headerlink&quot; title=&quot;MATLAB将向量强行转为行向量或者列向量&quot;&gt;&lt;/a&gt;MATLAB将向量强行转为行向量或者列向量&lt;/
+      
+    
+    </summary>
+    
+    
+      <category term="向量行列转换" scheme="http://www.shirunqi.com/tags/%E5%90%91%E9%87%8F%E8%A1%8C%E5%88%97%E8%BD%AC%E6%8D%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>MATLAB-包括当前路径下所有的文件和子文件夹路径方法</title>

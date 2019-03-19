@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.shirunqi.com/"/>
-  <updated>2019-03-19T09:01:47.056Z</updated>
+  <updated>2019-03-19T13:04:29.451Z</updated>
   <id>http://www.shirunqi.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://www.shirunqi.com/2019/03/19/MATLAB-%22%E5%8C%85%E6%8B%AC%E5%BD%93%E5%89%8D%E8%B7%AF%E5%BE%84%E4%B8%8B%E6%89%80%E6%9C%89%E7%9A%84%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%90%E6%96%87%E4%BB%B6%E5%A4%B9%E8%B7%AF%E5%BE%84%22%E6%96%B9%E6%B3%95/"/>
     <id>http://www.shirunqi.com/2019/03/19/MATLAB-&quot;包括当前路径下所有的文件和子文件夹路径&quot;方法/</id>
     <published>2019-03-19T08:25:23.000Z</published>
-    <updated>2019-03-19T09:01:47.056Z</updated>
+    <updated>2019-03-19T13:04:29.451Z</updated>
     
-    <content type="html"><![CDATA[<p>为了模块化m文件，需要将多个m文件分别放到不同的文件夹下，但是使用时需要同时使用各路径下的m文件，一种解决办法是将主函数写在根目录（这里所谓的根目录指不同文件夹共同所在的目录），之后使用语句</p><pre><code>addpath(genpath(pwd));</code></pre><p>即可将前路径下所有的文件和子文件夹路径全部包含。</p><ul><li>一个使用场景是需要载入下级文件夹中的数据文件，这是只需使用load命令载入即可，不需要再考虑路径的因素。</li></ul><p>很久不更新博客，发现之前存储在七牛云上的图片链接失效了。网上查到了新方法：使用一个叫做<strong>iPic</strong>的软件，非常方便地生成图片外链，强烈推荐，特别好用！</p><h2 id="江流宛转绕芳甸，月照花林皆似霰。"><a href="#江流宛转绕芳甸，月照花林皆似霰。" class="headerlink" title="江流宛转绕芳甸，月照花林皆似霰。"></a>江流宛转绕芳甸，月照花林皆似霰。</h2>]]></content>
+    <content type="html"><![CDATA[<p>为了模块化m文件，需要将多个m文件分别放到不同的文件夹下，但是使用时需要同时使用各路径下的m文件，一种解决办法是将主函数写在根目录（这里所谓的根目录指不同文件夹共同所在的目录），之后使用语句</p><pre><code>addpath(genpath(pwd));</code></pre><p>即可将前路径下所有的文件和子文件夹路径全部包含。</p><ul><li>一个使用场景</li></ul><p>   需要载入下级文件夹中的数据文件，这是只需使用load命令载入即可，不需要再考虑路径的因素。</p><p>很久不更新博客，发现之前存储在七牛云上的图片链接失效了。网上查到了新方法：使用一个叫做<strong>iPic</strong>的软件，非常方便地生成图片外链，强烈推荐，特别好用！</p><h2 id="江流宛转绕芳甸，月照花林皆似霰。"><a href="#江流宛转绕芳甸，月照花林皆似霰。" class="headerlink" title="江流宛转绕芳甸，月照花林皆似霰。"></a>江流宛转绕芳甸，月照花林皆似霰。</h2>]]></content>
     
     <summary type="html">
     

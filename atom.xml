@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.shirunqi.com/"/>
-  <updated>2018-07-13T14:04:53.000Z</updated>
+  <updated>2019-03-19T08:58:27.717Z</updated>
   <id>http://www.shirunqi.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>方法</title>
+    <link href="http://www.shirunqi.com/2019/03/19/MATLAB-%22%E5%8C%85%E6%8B%AC%E5%BD%93%E5%89%8D%E8%B7%AF%E5%BE%84%E4%B8%8B%E6%89%80%E6%9C%89%E7%9A%84%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%90%E6%96%87%E4%BB%B6%E5%A4%B9%E8%B7%AF%E5%BE%84%22%E6%96%B9%E6%B3%95/"/>
+    <id>http://www.shirunqi.com/2019/03/19/MATLAB-&quot;包括当前路径下所有的文件和子文件夹路径&quot;方法/</id>
+    <published>2019-03-19T08:25:23.000Z</published>
+    <updated>2019-03-19T08:58:27.717Z</updated>
+    
+    <content type="html"><![CDATA[<p>为了模块化m文件，需要将多个m文件分别放到不同的文件夹下，但是使用时需要同时使用各路径下的m文件，一种解决办法是将主函数写在根目录（这里所谓的根目录指不同文件夹共同所在的目录），之后使用语句</p><pre><code>addpath(genpath(pwd));</code></pre><p>即可将前路径下所有的文件和子文件夹路径全部包含。</p><ul><li>一个使用场景是需要载入下级文件夹中的数据文件，这是只需使用load命令载入即可，不需要再考虑路径的因素。</li></ul><p>很久不更新博客，发现之前存储在七牛云上的图片链接失效了。网上查到了新方法：使用一个叫做<strong>iPic</strong>的软件，非常方便地生成图片外链，强烈推荐，特别好用！</p><p>##江流宛转绕芳甸，月照花林皆似霰。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;为了模块化m文件，需要将多个m文件分别放到不同的文件夹下，但是使用时需要同时使用各路径下的m文件，一种解决办法是将主函数写在根目录（这里所谓的根目录指不同文件夹共同所在的目录），之后使用语句&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;addpath(genpath(pwd));
+&lt;/c
+      
+    
+    </summary>
+    
+    
+      <category term="MATLAB文件路径" scheme="http://www.shirunqi.com/tags/MATLAB%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84/"/>
+    
+  </entry>
   
   <entry>
     <title>pwm分别控制电机和舵机</title>
@@ -86,9 +111,9 @@
     <link href="http://www.shirunqi.com/2018/03/23/Xcode%E7%BC%96%E5%86%99C-%E6%97%A0%E6%B3%95%E6%AD%A3%E7%A1%AE%E8%AF%BB%E5%8F%96txt%E6%96%87%E4%BB%B6%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
     <id>http://www.shirunqi.com/2018/03/23/Xcode编写C-无法正确读取txt文件数据的解决办法/</id>
     <published>2018-03-23T15:00:01.000Z</published>
-    <updated>2018-03-23T16:21:49.000Z</updated>
+    <updated>2019-03-19T08:23:07.432Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Mac使用Xcode编写C-无法从当前目录下的txt文件读取数据的解决办法"><a href="#Mac使用Xcode编写C-无法从当前目录下的txt文件读取数据的解决办法" class="headerlink" title="Mac使用Xcode编写C++无法从当前目录下的txt文件读取数据的解决办法"></a>Mac使用Xcode编写C++无法从当前目录下的txt文件读取数据的解决办法</h1><h2 id="VS下读取txt文件中数据的一般方法"><a href="#VS下读取txt文件中数据的一般方法" class="headerlink" title="VS下读取txt文件中数据的一般方法"></a>VS下读取txt文件中数据的一般方法</h2><p>在VS下编写C++，若要从txt文件读取数据，只需将该txt放入相应.cpp文件所在文件夹，读取数据时，按照如下格式框架进行读取：</p><pre><code>ifstream input(“***.txt”);input &gt;&gt; 变量;input.close();</code></pre><p>注意：需包含头文件<code>&lt;fstream&gt;</code></p><h2 id="上述方法在Xcode运用时出现问题，无法读取到txt中的数据。下面给出三种解决办法"><a href="#上述方法在Xcode运用时出现问题，无法读取到txt中的数据。下面给出三种解决办法" class="headerlink" title="上述方法在Xcode运用时出现问题，无法读取到txt中的数据。下面给出三种解决办法"></a>上述方法在Xcode运用时出现问题，无法读取到txt中的数据。下面给出三种解决办法</h2><h3 id="使用txt文件所在位置的绝对路径"><a href="#使用txt文件所在位置的绝对路径" class="headerlink" title="使用txt文件所在位置的绝对路径"></a>使用txt文件所在位置的绝对路径</h3><p>获得该txt文件绝对路径的方法：选中该txt文件，使用快捷键<code>“command + i”</code>，打开<code>“显示简介”</code>，找到<code>“通用 -&gt; 位置”</code>，复制位置信息，粘贴到<code>“ifstream input(“***.txt”)”</code>的<code>“***.txt”</code>之前，不用担心路径中有中文，粘贴到程序中自然会变成英文，当然前提是路径中不能出现我们自己建立的中文文件夹。</p><p><strong>注意</strong>：要找到<code>“显示简介”</code>，还可以选中txt文件，右键，或者在屏幕顶部菜单栏的<code>“文件”</code>中找到<code>“显示简介”</code>。按照该方式，这个txt文件可以放到任意位置。</p><h3 id="将该txt文件放入本程序对应的可执行文件所在的文件夹"><a href="#将该txt文件放入本程序对应的可执行文件所在的文件夹" class="headerlink" title="将该txt文件放入本程序对应的可执行文件所在的文件夹"></a>将该txt文件放入本程序对应的可执行文件所在的文件夹</h3><p>如图所示:<br><img src="http://p61thkrd6.bkt.clouddn.com/product.png" alt="product"></p><p>点击<code>“Product”</code>下的执行文件，图中为<code>“Read_Data”</code>,打开后，在屏幕左侧<code>“Identity and Type”</code>栏中，找到<code>“Full Path”</code>,复制该路径，之后鼠标单击桌面或者打开一个<code>“Finder”</code>窗口，按下快捷键<code>“command + shift + g”</code>，弹出<code>“前往文件夹”</code>的地址栏，粘贴该地址，即可打开目标文件夹，将txt文件放入即可。</p><h3 id="在Xcode中进行相关设置"><a href="#在Xcode中进行相关设置" class="headerlink" title="在Xcode中进行相关设置"></a>在Xcode中进行相关设置</h3><p>在Xcode应用程序下，找到屏幕顶部菜单栏，依次选择<code>“Product -&gt; Scheme -&gt; Edit Scheme”</code>,打开一个窗口。<br>该窗口主要分为左右两部分，左边选择<code>“Run”</code>，右边选择<code>“Options”</code>，之后找到<code>“Working Dictionary”</code>,勾选<code>“Use custom working directory”</code>,并找到txt文件所在路径，最后关闭该窗口即可。</p><p>以上提到的三种方法是我都验证做通的，如有问题欢迎与我交流。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Mac使用Xcode编写C-无法从当前目录下的txt文件读取数据的解决办法"><a href="#Mac使用Xcode编写C-无法从当前目录下的txt文件读取数据的解决办法" class="headerlink" title="Mac使用Xcode编写C++无法从当前目录下的txt文件读取数据的解决办法"></a>Mac使用Xcode编写C++无法从当前目录下的txt文件读取数据的解决办法</h1><h2 id="VS下读取txt文件中数据的一般方法"><a href="#VS下读取txt文件中数据的一般方法" class="headerlink" title="VS下读取txt文件中数据的一般方法"></a>VS下读取txt文件中数据的一般方法</h2><p>在VS下编写C++，若要从txt文件读取数据，只需将该txt放入相应.cpp文件所在文件夹，读取数据时，按照如下格式框架进行读取：</p><pre><code>ifstream input(“***.txt”);input &gt;&gt; 变量;input.close();</code></pre><p>注意：需包含头文件<code>&lt;fstream&gt;</code></p><h2 id="上述方法在Xcode运用时出现问题，无法读取到txt中的数据。下面给出三种解决办法"><a href="#上述方法在Xcode运用时出现问题，无法读取到txt中的数据。下面给出三种解决办法" class="headerlink" title="上述方法在Xcode运用时出现问题，无法读取到txt中的数据。下面给出三种解决办法"></a>上述方法在Xcode运用时出现问题，无法读取到txt中的数据。下面给出三种解决办法</h2><h3 id="使用txt文件所在位置的绝对路径"><a href="#使用txt文件所在位置的绝对路径" class="headerlink" title="使用txt文件所在位置的绝对路径"></a>使用txt文件所在位置的绝对路径</h3><p>获得该txt文件绝对路径的方法：选中该txt文件，使用快捷键<code>“command + i”</code>，打开<code>“显示简介”</code>，找到<code>“通用 -&gt; 位置”</code>，复制位置信息，粘贴到<code>“ifstream input(“***.txt”)”</code>的<code>“***.txt”</code>之前，不用担心路径中有中文，粘贴到程序中自然会变成英文，当然前提是路径中不能出现我们自己建立的中文文件夹。</p><p><strong>注意</strong>：要找到<code>“显示简介”</code>，还可以选中txt文件，右键，或者在屏幕顶部菜单栏的<code>“文件”</code>中找到<code>“显示简介”</code>。按照该方式，这个txt文件可以放到任意位置。</p><h3 id="将该txt文件放入本程序对应的可执行文件所在的文件夹"><a href="#将该txt文件放入本程序对应的可执行文件所在的文件夹" class="headerlink" title="将该txt文件放入本程序对应的可执行文件所在的文件夹"></a>将该txt文件放入本程序对应的可执行文件所在的文件夹</h3><p>如图所示:<br><img src="https://ws3.sinaimg.cn/large/006tKfTcly1g186gc7sdlj30zq04wq4a.jpg" alt=""></p><p>点击<code>“Product”</code>下的执行文件，图中为<code>“Read_Data”</code>,打开后，在屏幕左侧<code>“Identity and Type”</code>栏中，找到<code>“Full Path”</code>,复制该路径，之后鼠标单击桌面或者打开一个<code>“Finder”</code>窗口，按下快捷键<code>“command + shift + g”</code>，弹出<code>“前往文件夹”</code>的地址栏，粘贴该地址，即可打开目标文件夹，将txt文件放入即可。</p><h3 id="在Xcode中进行相关设置"><a href="#在Xcode中进行相关设置" class="headerlink" title="在Xcode中进行相关设置"></a>在Xcode中进行相关设置</h3><p>在Xcode应用程序下，找到屏幕顶部菜单栏，依次选择<code>“Product -&gt; Scheme -&gt; Edit Scheme”</code>,打开一个窗口。<br>该窗口主要分为左右两部分，左边选择<code>“Run”</code>，右边选择<code>“Options”</code>，之后找到<code>“Working Dictionary”</code>,勾选<code>“Use custom working directory”</code>,并找到txt文件所在路径，最后关闭该窗口即可。</p><p>以上提到的三种方法是我都验证做通的，如有问题欢迎与我交流。</p>]]></content>
     
     <summary type="html">
     

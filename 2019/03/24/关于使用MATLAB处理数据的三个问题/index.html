@@ -111,7 +111,7 @@
 <meta property="og:site_name" content="shirunqi">
 <meta property="og:description" content="关于使用MATLAB处理数据的三个问题1. 批量保存和载入多个文件   仿真时，通常会通过改变某一自变量的值来研究该自变量对因变量的影响规律。在这种情况下，保存数据时可以保存成有规律的名字，以便将来使用。    按规律保存数据的方法：    假设计算结果此时存在矩阵B中，即 B = [1 2 3;4 5 6;7 8 9];    此时想要将矩阵B的每一行分别存在文件“i-data.dat”(后缀名">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-25T14:51:18.780Z">
+<meta property="og:updated_time" content="2019-03-25T14:54:26.172Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于使用MATLAB处理数据的三个问题">
 <meta name="twitter:description" content="关于使用MATLAB处理数据的三个问题1. 批量保存和载入多个文件   仿真时，通常会通过改变某一自变量的值来研究该自变量对因变量的影响规律。在这种情况下，保存数据时可以保存成有规律的名字，以便将来使用。    按规律保存数据的方法：    假设计算结果此时存在矩阵B中，即 B = [1 2 3;4 5 6;7 8 9];    此时想要将矩阵B的每一行分别存在文件“i-data.dat”(后缀名">
@@ -391,7 +391,7 @@
 <p>   假设计算结果此时存在矩阵B中，即</p>
 <pre><code>B = [1 2 3;4 5 6;7 8 9];
 </code></pre><p>   此时想要将矩阵B的每一行分别存在文件“i-data.dat”(后缀名可以更改)中，实现方法：</p>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">  for i = 1 : 1 : 3</span><br><span class="line">chr = [num2str(i), &apos;-data.dat&apos;];</span><br><span class="line">   b = B(i,:);</span><br><span class="line">   save(chr,&apos;b&apos;);</span><br><span class="line">  end</span><br></pre></td></tr></table></figure>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for i = 1 : 1 : 3</span><br><span class="line">	chr = [num2str(i), &apos;-data.dat&apos;];</span><br><span class="line">	b = B(i,:);</span><br><span class="line">	save(chr,&apos;b&apos;);</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <ul>
 <li><p>注意：实际使用时矩阵B是不必出现的。</p>
 <p>这种方法可以实现对数据的<strong>动态批量</strong>保存。</p>

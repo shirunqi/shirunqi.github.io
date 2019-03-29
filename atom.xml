@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.shirunqi.com/"/>
-  <updated>2019-03-25T14:54:26.172Z</updated>
+  <updated>2019-03-29T08:11:39.962Z</updated>
   <id>http://www.shirunqi.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MATLAB机器人工具箱安装方法</title>
+    <link href="http://www.shirunqi.com/2019/03/29/MATLAB%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%B7%A5%E5%85%B7%E7%AE%B1%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/"/>
+    <id>http://www.shirunqi.com/2019/03/29/MATLAB机器人工具箱使用方法/</id>
+    <published>2019-03-29T07:00:22.000Z</published>
+    <updated>2019-03-29T08:11:39.962Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="MATLAB机器人工具箱安装方法"><a href="#MATLAB机器人工具箱安装方法" class="headerlink" title="MATLAB机器人工具箱安装方法"></a>MATLAB机器人工具箱安装方法</h1><ul><li><p>1.将机器人工具箱文件夹(名称为:<strong>rvctools</strong>)放在MATLAB安装目录下的toolbox文件夹下<br><img src="https://ws4.sinaimg.cn/large/006tKfTcly1g1jpiazu2tj312v0u0gs7.jpg" alt=""></p></li><li><p>2.在MATLAB里添加rcvtools的路径</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">具体步骤：</span><br><span class="line">HOME→Set Path→Add with Subfolders...→选择rvctools文件夹→Save→Close</span><br></pre></td></tr></table></figure></li></ul><p><img src="https://ws3.sinaimg.cn/large/006tKfTcly1g1jq02s990j31c00u07qs.jpg" alt=""></p><ul><li>3.运行rvctools文件夹下的<code>startup_rvc.m</code>文件</li></ul><blockquote><p>rvctools下载链接：<a href="https://github.com/shirunqi/robotic-toolbox-for-matlab" target="_blank" rel="noopener">https://github.com/shirunqi/robotic-toolbox-for-matlab</a></p></blockquote><h2 id="垆边人似月，皓腕凝霜雪。"><a href="#垆边人似月，皓腕凝霜雪。" class="headerlink" title="垆边人似月，皓腕凝霜雪。"></a>垆边人似月，皓腕凝霜雪。</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;MATLAB机器人工具箱安装方法&quot;&gt;&lt;a href=&quot;#MATLAB机器人工具箱安装方法&quot; class=&quot;headerlink&quot; title=&quot;MATLAB机器人工具箱安装方法&quot;&gt;&lt;/a&gt;MATLAB机器人工具箱安装方法&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;1.将机器
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>关于使用MATLAB处理数据的三个问题</title>

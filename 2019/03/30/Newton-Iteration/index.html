@@ -114,7 +114,7 @@
 <meta property="og:image" content="https://ws3.sinaimg.cn/large/006tKfTcly1g1knmkvbtdg308v01cdfl.gif">
 <meta property="og:image" content="https://ws3.sinaimg.cn/large/006tKfTcly1g1knqiajajg300f00c03y.gif">
 <meta property="og:image" content="https://ws3.sinaimg.cn/large/006tKfTcly1g1jzt3a9tzj30sq0uy12p.jpg">
-<meta property="og:updated_time" content="2019-03-30T03:41:12.622Z">
+<meta property="og:updated_time" content="2019-03-30T11:43:11.175Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Newton_Iteration">
 <meta name="twitter:description" content="Newton Iteration程序链接：https://github.com/shirunqi/Newton_Iteration 1.程序里给出的算例是求解方程的根，因此f(x)的形式是已知的，因此可以求微分。但是实际情况往往是无法得到f(x)的解析式，只能求取f(x)的值，所以这里用求差分代替求微分，牛顿迭代式则可以写为：   其中为一小量。 2.最初是想写一个通用的牛顿迭代函数，希望将要迭代">
@@ -394,7 +394,7 @@
 <p>1.程序里给出的算例是求解方程的根，因此f(x)的形式是已知的，因此可以求微分。但是实际情况往往是无法得到f(x)的解析式，只能求取f(x)的值，所以这里用求差分代替求微分，牛顿迭代式则可以写为：</p>
 <center><img src="https://ws3.sinaimg.cn/large/006tKfTcly1g1knmkvbtdg308v01cdfl.gif" alt=""><br></center>
 
-<p>其中<img src="https://ws3.sinaimg.cn/large/006tKfTcly1g1knqiajajg300f00c03y.gif" alt="">为一小量。</p>
+<p>其中<div align="left"><img src="https://ws3.sinaimg.cn/large/006tKfTcly1g1knqiajajg300f00c03y.gif" alt=""></div>为一小量。</p>
 <p>2.最初是想写一个通用的牛顿迭代函数，希望将要迭代求解的方程作为函数的输入，不过将函数作为参数传递不像我想的那么简单。。。<br>一开始写了一种以普通函数作为参数传递的牛顿迭代函数，但是真正用的时候带求解的方程是另一个类里的成员函数，这就需要写一种以成员函数作为参数传递的牛顿迭代函数。必须说明的是，目前我写的这个通用性受限，需要在我写好的方程类里写方程，将来可以将该牛顿迭代函数声明为模板函数。</p>
 <blockquote>
 <p>一个插曲：之前用Macdown输入公式的时候也知道可以以LaTeX形式输入，但就是搞不出来，看自带的帮助例子也没搞懂，今天偶然发现就是没有进行设置！！！</p>

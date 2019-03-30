@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.shirunqi.com/"/>
-  <updated>2019-03-30T11:49:17.231Z</updated>
+  <updated>2019-03-30T11:50:51.284Z</updated>
   <id>http://www.shirunqi.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://www.shirunqi.com/2019/03/30/Newton-Iteration/"/>
     <id>http://www.shirunqi.com/2019/03/30/Newton-Iteration/</id>
     <published>2019-03-30T02:53:05.000Z</published>
-    <updated>2019-03-30T11:49:17.231Z</updated>
+    <updated>2019-03-30T11:50:51.284Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Newton-Iteration"><a href="#Newton-Iteration" class="headerlink" title="Newton Iteration"></a>Newton Iteration</h1><p>程序链接：<a href="https://github.com/shirunqi/Newton_Iteration" target="_blank" rel="noopener">https://github.com/shirunqi/Newton_Iteration</a></p><p>1.程序里给出的算例是求解方程的根，因此f(x)的形式是已知的，因此可以求微分。但是实际情况往往是无法得到f(x)的解析式，只能求取f(x)的值，所以这里用求差分代替求微分，牛顿迭代式则可以写为：</p><center><img src="https://ws3.sinaimg.cn/large/006tKfTcly1g1knmkvbtdg308v01cdfl.gif" alt=""><br></center><p><img src="https://ws2.sinaimg.cn/large/006tKfTcly1g1l281okkej306801c0so.jpg" height="24" width="90"></p><p>2.最初是想写一个通用的牛顿迭代函数，希望将要迭代求解的方程作为函数的输入，不过将函数作为参数传递不像我想的那么简单。。。<br>一开始写了一种以普通函数作为参数传递的牛顿迭代函数，但是真正用的时候带求解的方程是另一个类里的成员函数，这就需要写一种以成员函数作为参数传递的牛顿迭代函数。必须说明的是，目前我写的这个通用性受限，需要在我写好的方程类里写方程，将来可以将该牛顿迭代函数声明为模板函数。</p><blockquote><p>一个插曲：之前用Macdown输入公式的时候也知道可以以LaTeX形式输入，但就是搞不出来，看自带的帮助例子也没搞懂，今天偶然发现就是没有进行设置！！！</p></blockquote><ul><li>设置方法：</li></ul><p><code>Preferences→Rendering→勾选&quot;TeX-like math syntax&quot;以及&quot;Use dollar sign($) as inline delimiter&quot;</code><br><img src="https://ws3.sinaimg.cn/large/006tKfTcly1g1jzt3a9tzj30sq0uy12p.jpg" alt=""></p><h2 id="曾经沧海难为水，除却巫山不是云。"><a href="#曾经沧海难为水，除却巫山不是云。" class="headerlink" title="曾经沧海难为水，除却巫山不是云。"></a>曾经沧海难为水，除却巫山不是云。</h2>]]></content>
+    <content type="html"><![CDATA[<h1 id="Newton-Iteration"><a href="#Newton-Iteration" class="headerlink" title="Newton Iteration"></a>Newton Iteration</h1><p>程序链接：<a href="https://github.com/shirunqi/Newton_Iteration" target="_blank" rel="noopener">https://github.com/shirunqi/Newton_Iteration</a></p><p>1.程序里给出的算例是求解方程的根，因此f(x)的形式是已知的，因此可以求微分。但是实际情况往往是无法得到f(x)的解析式，只能求取f(x)的值，所以这里用求差分代替求微分，牛顿迭代式则可以写为：</p><center><img src="https://ws3.sinaimg.cn/large/006tKfTcly1g1knmkvbtdg308v01cdfl.gif" alt=""><br></center><p><img src="https://ws2.sinaimg.cn/large/006tKfTcly1g1l281okkej306801c0so.jpg" height="30" width="100"></p><p>2.最初是想写一个通用的牛顿迭代函数，希望将要迭代求解的方程作为函数的输入，不过将函数作为参数传递不像我想的那么简单。。。<br>一开始写了一种以普通函数作为参数传递的牛顿迭代函数，但是真正用的时候带求解的方程是另一个类里的成员函数，这就需要写一种以成员函数作为参数传递的牛顿迭代函数。必须说明的是，目前我写的这个通用性受限，需要在我写好的方程类里写方程，将来可以将该牛顿迭代函数声明为模板函数。</p><blockquote><p>一个插曲：之前用Macdown输入公式的时候也知道可以以LaTeX形式输入，但就是搞不出来，看自带的帮助例子也没搞懂，今天偶然发现就是没有进行设置！！！</p></blockquote><ul><li>设置方法：</li></ul><p><code>Preferences→Rendering→勾选&quot;TeX-like math syntax&quot;以及&quot;Use dollar sign($) as inline delimiter&quot;</code><br><img src="https://ws3.sinaimg.cn/large/006tKfTcly1g1jzt3a9tzj30sq0uy12p.jpg" alt=""></p><h2 id="曾经沧海难为水，除却巫山不是云。"><a href="#曾经沧海难为水，除却巫山不是云。" class="headerlink" title="曾经沧海难为水，除却巫山不是云。"></a>曾经沧海难为水，除却巫山不是云。</h2>]]></content>
     
     <summary type="html">
     

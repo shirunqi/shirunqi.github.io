@@ -285,6 +285,172 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.shirunqi.com/2019/03/30/Newton-Iteration/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SRQ">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/aqi.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="shirunqi">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/30/Newton-Iteration/" itemprop="url">Newton_Iteration</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-30T10:53:05+08:00">
+                2019-03-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  395
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Newton-Iteration"><a href="#Newton-Iteration" class="headerlink" title="Newton Iteration"></a>Newton Iteration</h1><p>程序链接：<a href="https://github.com/shirunqi/Newton_Iteration" target="_blank" rel="noopener">https://github.com/shirunqi/Newton_Iteration</a></p>
+<p>1.程序里给出的算例是求解方程的根，因此f(x)的形式是已知的，因此可以求微分。但是实际情况往往是无法得到f(x)的解析式，只能求取f(x)的值，所以这里用求差分代替求微分，牛顿迭代式则可以写为：</p>
+<p>$$x_{n+1}=x_n-\frac{f(x_n)}{f’(x_n)}=x_n-\frac{f(x_n)}{\frac{f(x_n+\Delta)-f(x_n)}{\Delta}}$$</p>
+<p> 其中\(\Delta\)为一小量。</p>
+<p>2.最初是想写一个通用的牛顿迭代函数，希望将要迭代求解的方程作为函数的输入，不过将函数作为参数传递不像我想的那么简单。。。<br>一开始写了一种以普通函数作为参数传递的牛顿迭代函数，但是真正用的时候带求解的方程是另一个类里的成员函数，这就需要写一种以成员函数作为参数传递的牛顿迭代函数。必须说明的是，目前我写的这个通用性受限，需要在我写好的方程类里写方程，将来可以将该牛顿迭代函数声明为模板函数。</p>
+<blockquote>
+<p>一个插曲：之前用Macdown输入公式的时候也知道可以以LaTeX形式输入，但就是搞不出来，看自带的帮助例子也没搞懂，今天偶然发现就是没有进行设置！！！</p>
+</blockquote>
+<ul>
+<li>设置方法：</li>
+</ul>
+<p><code>Preferences→Rendering→勾选&quot;TeX-like math syntax&quot;以及&quot;Use dollar sign($) as inline delimiter&quot;</code><br><img src="https://ws3.sinaimg.cn/large/006tKfTcly1g1jzt3a9tzj30sq0uy12p.jpg" alt=""></p>
+<h2 id="曾经沧海难为水，除却巫山不是云。"><a href="#曾经沧海难为水，除却巫山不是云。" class="headerlink" title="曾经沧海难为水，除却巫山不是云。"></a>曾经沧海难为水，除却巫山不是云。</h2>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+<div>
+  
+</div>
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.shirunqi.com/2019/03/29/MATLAB机器人工具箱使用方法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1785,178 +1951,6 @@ Alt + ← →(指方向键的左、右键)
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.shirunqi.com/2018/03/09/03-09/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SRQ">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/aqi.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="shirunqi">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/09/03-09/" itemprop="url">rand()函数</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-09T11:23:20+08:00">
-                2018-03-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计</span>
-                
-                <span title="字数统计">
-                  394
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="C-学习记录：rand-函数"><a href="#C-学习记录：rand-函数" class="headerlink" title="C++学习记录：rand()函数"></a>C++学习记录：rand()函数</h1><h2 id="rand-函数的用法如下："><a href="#rand-函数的用法如下：" class="headerlink" title="rand()函数的用法如下："></a>rand()函数的用法如下：</h2><ol>
-<li><p>不同于MATLAB，C++中的rand()不需要输入任何参数，使用它生成的随机数的范围为0~最大随机数。其中，最大随机数指的是一个固定的大整数。（注意，这里生成的随机数是一个<strong>整数</strong>）;</p>
-</li>
-<li><p>如果要产生一个a~b之间的随机整数，可采用如下公式：</p>
-<pre><code>rand() % (b-a+1)+ a
-</code></pre><p>例如，现在想要产生一个0~99之间的整数，表达式为：</p>
-<pre><code>int num = rand() % 100; 
-</code></pre></li>
-<li><p>那如果我们想得到一个小数该怎么办呢？</p>
-</li>
-</ol>
-<p>若要产生0~1之间“随机到十分位”（比如0.1，0.2等等）的小数，则可以先产生0~10的整数，然后除以10即可；</p>
-<p>若要产生0~1之间“随机到百分位”（比如0.01，0.66等等）的小数，则可以先产生0~100的整数，然后除以100即可。</p>
-<p>其它情况依此类推。</p>
-<ol>
-<li>会发现每次程序运行的时候rand()产生的随机数与上一次是相同的，这样做是为了便于程序的调试。</li>
-</ol>
-<p>如果想要要每次产生不同的随机数，则可以使用srand(seed)函数产生随机化种子，seed不同，产生的随机数就不同，一般可以用time(0)作seed，即srand(time(0))，这样就可以使每次程序运行时生成不同的随机数。（注意，time(0)指的是获取当前时间)，使用时需包含time.h头文件。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-<div>
-  
-</div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2007,7 +2001,7 @@ Alt + ← →(指方向键的左、右键)
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -2020,7 +2014,7 @@ Alt + ← →(指方向键的左、右键)
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
@@ -2153,7 +2147,7 @@ Alt + ← →(指方向键的左、右键)
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共3.1k字</span>
+  <span class="post-count">博客全站共3.5k字</span>
 </div>
         
 
